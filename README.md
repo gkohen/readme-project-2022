@@ -119,6 +119,12 @@ Second, we supply the team members with a GitHub Action pipeline to create new r
 ![ Create Repo Workflow](assets/create-repo.png)  
 Anyone at Blue Yonder can create such a repo. As part of the automation we:
 1. Validate if the team set the exists and if so assign the teams in the team set to the repository.
-2. Validate the repository naming
-3. Create the branch protection rules that are the standards of Blue Yonder
+1. Validate the repository naming
+1. Create the branch protection rules that are the standards of Blue Yonder
+1. Generate a CODEOWNERS file and assign it to the collaborators team of the team set assigned to the repo.
+1. Notify, using our MS-Teams channels, the creator that:
+    1. Creation was successful and attache general Blue Yonder usage guidelines and a link to the newly created link.
+    2. Creation failed and detail the reason why it failed. Maybe a wrong team set or naming convention was specified.   
+
+Note that you can pull the same trick using other collaboration tool such as Slack.
 
