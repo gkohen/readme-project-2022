@@ -115,10 +115,10 @@ Same as with the repo org structures, we maintain in the same repo a JSON file w
 ## Let's Create Repos - The Way We Want Them
 Now that we have the building blocks, how can we empower Blue Yonders to create their repos while making sure these adhere to the company standards? 
 First, we make sure no one has the ability to create repos directly using the GitHub to make sure we align as a company.   
-Second, we supply the team members with a GitHub Action pipeline to create new repositories while aligning on Blue Yonder naming conventions and structures with team sets we have defined in a GitOps contributing manner. Further we can hook it up to other vendors such as we do with [Codacy](https://app.codacy.com/)(which is a great service we use for code quality).
-![ Create Repo Workflow](assets/create-repo.png)
+Second, we supply the team members with a GitHub Action pipeline to create new repositories while aligning on Blue Yonder naming conventions and structures with team sets we have defined in a GitOps contributing manner. Further we can hook it up to other vendors such as we do with [Codacy](https://app.codacy.com/)(which is a great service we use for code quality).  
+![ Create Repo Workflow](assets/create-repo.png)  
 Anyone at Blue Yonder can create such a repo. As part of the automation we:
-1. Validate if the team set the exists and if so assign the teams in the team set to the repostiory.
+1. Validate if the team set the exists and if so assign the teams in the team set to the repository.
 2. Validate the repository naming
 3. Create the branch protection rules that are the standards of Blue Yonder
 
